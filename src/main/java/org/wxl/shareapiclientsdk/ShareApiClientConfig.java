@@ -22,7 +22,7 @@ public class ShareApiClientConfig {
     private String secretKey;
 
     @Bean
-    public ShareApiClient yuApiClient() {
+    public ShareApiClient shareApiClient() {
         return new ShareApiClient(accessKey, secretKey);
     }
 

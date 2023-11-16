@@ -11,13 +11,14 @@ import cn.hutool.crypto.digest.Digester;
 public class SignUtils {
     /**
      * 生成签名
-     * @param body
+     * @param
      * @param secretKey
      * @return
      */
-    public static String genSign(String body, String secretKey) {
+    public static String getSign(String body, String secretKey, String nonce, String timestamp) {
         Digester md5 = new Digester(DigestAlgorithm.SHA256);
-        String content = body + "." + secretKey;
+        String content = body + "." + secretKey + "." + nonce + "." + timestamp;
+        System.out.println(content);
         return md5.digestHex(content);
     }
 }
