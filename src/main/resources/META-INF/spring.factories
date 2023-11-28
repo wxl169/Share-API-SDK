@@ -1,2 +1,2 @@
 # spring boot starter
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=org.wxl.shareapiclientsdk.ShareApiClientConfig
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=org.wxl.shareapiclientsdk.config.ShareApiClientConfig
